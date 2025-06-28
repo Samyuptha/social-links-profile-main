@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "variable-font";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+    font-family: "variable-font";
+    font-size: 14px;
+}
+body {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.container {
+    width: auto;
+    height: auto;
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(75, 94%, 57%);
+    align-items: center;
+    display: inline-block;
+    margin-top: 100px;
+    padding: 25px;
+    border-radius: 3%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.profile-picture > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-weight: 500;
+    font-size:x-large;
+    color: hsl(0, 0%, 100%);
+    margin: unset;
+}
+.place {
+    font-weight: 600;
+    font-size: small;
+    color: hsl(75, 94%, 57%);
+}
+.job {
+    font-weight:400;
+    color: hsl(0, 0%, 100%);
+    font-size: small;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+}
+.box-item {
+    font-weight: 600;
+    font-size: smaller;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 20%);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 7px;
+}
+.box-item:hover {
+    cursor: pointer;
+    background-color: hsl(75, 94%, 57%);
+    color:  hsl(0, 0%, 20%);
+}
+@media screen and (max-width:375px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
